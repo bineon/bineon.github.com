@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>郭常圳</title>
+  <meta name="author" content="Changzhen Guo">
+
+  
+  <meta name="description" content="我们的开发节奏是每周发布一个版本。这个版本应该包含尽可能多的新的功能，但不能超出团队的能力。这需要比较强的工作量预估的能力。我们采用story point来预估工作量。 story point方式预估工作量 这个方法很简单，每一件要做的事情是一个story， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bineon.github.com/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="郭常圳" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38535571-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">郭常圳</a></h1>
+  
+    <h2>创业的观察、思考和实践</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bineon.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/24/story-point-estimation/">如何预估工作量</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-24T20:15:00+08:00" pubdate data-updated="true">Jan 24<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我们的开发节奏是每周发布一个版本。这个版本应该包含尽可能多的新的功能，但不能超出团队的能力。这需要比较强的工作量预估的能力。我们采用story point来预估工作量。</p>
+
+<h2>story point方式预估工作量</h2>
+
+<p>这个方法很简单，每一件要做的事情是一个story，为每一个story赋予一个point来表示该story需要的工作量，将全部story point加起来就得到了全部的工作量。确定point的过程，我们称为出分/估分。</p>
+
+<p>我们在每周的计划会议上估分。计划会议之前，项目经理会整理一个story list。整理这个story list时，项目经理会综合考虑团队的战斗力以及公司对于项目时间的要求。计划会议中，开发团队首先会从list中挑选出<strong><em>最小的</em></strong>story，并为该story出分2（即point定为2）。该story即做为本周的基准story，其他story在出分时，都会与该story做比较。依次讨论list中的其他story并出分。全部story出分完毕之后得到整个list的point值，通过这个值就能判断出本周的工作是过饱和还是欠饱和并做相应处理。</p>
+
+<p>一个常见的现象是将point直接等价于工作时间，这是错误的。每个人的能力都不一样，完成同一个story所需要的绝对时间也是不一样的，因此估计工作时间是很难达成一致的。而基准story则是消除这种现象的办法。假设A的效率是B的两倍、A只需要半天就能完成基准story，则B需要1天。对于另外一个story，假设A需要2天，那么B需要4天。在估计这个story时，A和B都会给出8这个值。</p>
+
+<p>每周结束时我们会review整个list，看哪些story是全部完成的，并记录完成的story point，同时计算日人均story point。一段时间后，我们就能有一个每周日人均的折线图了。这个折线图也能帮我们估计下周能做多少事情。</p>
+
+<h2>一些实践</h2>
+
+<ol>
+<li><p><strong>每周的基准story都不一样，那上一周所完成的point值如何能作为本周的参考？</strong></p>
+
+<p> 每次确定好本周的基准story之后，都将其与上一周的基准story做比较，算出一个比例。通过这个比例将上周完成的point换算过来即可。事实上我们不仅会记录与上一周的比例，同时还会依据历史比例计算本周与有史以来第一周的基准story的比值。直观看来，这样会有误差，而且随着时间的增加，误差会越来越大。但在实践过程中我们认为这个误差并不大，在接受范围内。</p></li>
+<li><p><strong>基准story一定是<em>最小的</em>story吗？</strong></p>
+
+<p> 其实不是的。我们会挑选一个比较小但是又的确有一定工作量的story。假设挑选了一个特别小的story，那么其他story的point都会巨大，误差也会巨大，就没有意义了。</p></li>
+<li><p><strong>每个人都参与每一个story的估计吗？</strong></p>
+
+<p> 是的。每一个story都要求开发团队的每一个成员独立估计，即使不参与这个story开发的人，也得参与出分。例如iOS开发者必须为Web开发的story估分，反之亦然。</p>
+
+<p> 这样做一个显而易见的问题是，iOS开发者对于Web开发不了解，估分也只能是盲估，这就带来了比较大的不确定性。但我们认为，一个优秀的开发者，通过同事对工作的描述，是能相对准确的估计工作量的。另外，我们团队大多数开发者都具备多种开发技能。</p>
+
+<p> 每一个story都需要全体开发者出分所带来的另一个问题是会议时间比较长，后来我们改进了一下，对于任意story，如果负责开发的人直接给出0、1、2的point，那就不需要讨论了。</p></li>
+<li><p><strong>大家对同一story出分不一样怎么办？</strong></p>
+
+<p> 我们规定point值只能从0、1、2、3、5、8、13、21、34、89中挑选（公司帮我们制作了出分专门用的纸牌，所以出分的过程被我们叫做打牌）。这样虽然大家出分会有一定差别，但大多数时候都会集中在相邻的三个数字上。这时出分最大的和出分最小的会分别说自己的观点，然后每个人再次出分。几次讨论之后出分就统一了。</p>
+
+<p> 出分越大误差就越大，所以我们会尽可能避免出大分的现象。如果一个story太大，就将其拆开为多个story。我们出过最大的分值是21。</p></li>
+<li><p><strong>一周结束时，如果有story没能完全完成，那么如何计算本周完成的point？</strong></p>
+
+<p> 没有完成的story，无论是没开始做，还是差一点点就完成了，我们都不将其point计入本周完成的point。有一次我们一个13的story差一点就完成了，那周我们完成的point就显得很少。</p></li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/21/keep-meeting-away/">让工程师远离会议</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-21T20:19:00+08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>产品开发过程中的会议格外多，例如立项会议、需求评审会议、交互评审会议、视觉评审会议。除开这些常规的会议，还有每周例会、项目进度检查会等等。这些会议，有的是一次就能结束的，例如每周例会，更多的则是需要多次进行的，例如各种评审会议往往要持续2到3次。会议的本意是好的，希望与会者能够达成一致并顺利进行下一步的工作。但由于各种原因，鲜有会议得到有效的组织并高效进行的，大部分时间都被浪费掉了。基于此，我们严格限制团队的会议。目前的我们的工程师团队，只有2种会议：计划会议和每日站会。</p>
+
+<h2>计划会议</h2>
+
+<p>计划会议包括三个议题：</p>
+
+<ol>
+<li><strong>评审会议：</strong>上一周我们完成了哪些事情。所谓完成，大部分时候我们指可以交付上线（因此是包含测试以及修Bug的）。这些完成的事情，我们会依次演示给整个团队看。</li>
+<li><strong>回顾会议：</strong>上一周我们做的怎么样。这个议题不会讨论与产品相关的任何具体功能，而是整个团队来回顾开发流程中做的好的地方以及待改善的地方。</li>
+<li><strong>计划会议：</strong>接下来一周，我们做哪些事情。这个议题开始讨论之前，项目经理会准备好好一个供讨论的列表。讨论时，产品经理会依次介绍列表上的事情，之后工程师会轮流估算每个事情所花费的时间。时间估计完毕之后，项目经理会对这个列表做一些调整，可能是增加一些条目，也可能是移除一些条目。</li>
+</ol>
+
+
+<p>计划会议每周一次，每次3小时，前两个议题共1个小时，第三个议题2个小时。工程师、项目经理、产品经理都需要参与这个会议。产品经理在介绍完下周要做的事情的具体内容之后，整个会议会茶歇10分钟。茶歇之后的工作量估算，产品经理无需参与。</p>
+
+<p>计划会议偶尔会延时。我们是10点10分开始计划会议，最长的一次会议持续到了下午3点。整个团队都觉得这很糟糕，在下一次的回顾会议中，大家都指出了这一点并强调应该加以改进。目前我们基本上能保证13点半之前完成整个计划会议。</p>
+
+<h2>每日站会</h2>
+
+<p>计划会议确定每周的工作，而每日站会则确定每天的工作。每次站会不超过十分钟，每个工程师依次说自己昨天做了哪些事情、今天打算做哪些事情、自己遇到了什么困难。站会上不允许对遇到的困难进行讨论，因为并不是每个人都关心这个困难并能提供帮助，而且解决方案的讨论往往会很耗时。</p>
+
+<p>我们每天上午10点10分开站会。全部工程师会<strong>站在</strong>同一台电脑前对着我们的Redmine系统来回答那三个问题。公司为每个工程师统一配备27寸的iMac，所以任何一个工程师的电脑都足够开一个站会。</p>
+
+<h2>一些实践</h2>
+
+<p>基于效率的考虑，我们有一些会议行为的限制。包括：</p>
+
+<ol>
+<li>不允许迟到。如果有人迟到，我们会等着。这样的好处是每个人都能完全了解会议的内容，避免靠人来转述会议内容。</li>
+<li>会议过程中不能吃东西</li>
+<li>会议过程中不能用手机，包括接电话、打电话、看短信刷微博等等</li>
+<li>会议过程中不能随意离开，包括收快递</li>
+</ol>
+
+
+<p>如果违反了规则，有两种惩罚措施，二选一：</p>
+
+<ol>
+<li>请整个团队TB</li>
+<li>戴一天的小丑帽，中途不能取下来，中午吃饭也不能取下来，而且吃饭的地方可以由任意工程师提议。</li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/24/story-point-estimation/">如何预估工作量</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/21/keep-meeting-away/">让工程师远离会议</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Changzhen Guo -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
